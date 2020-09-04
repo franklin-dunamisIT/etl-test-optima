@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -33,13 +34,19 @@
             background-color: #4CAF50;
             color: white;
             }
-
-
 </style>
 
     </style>
   </head>
   <body>
+    <div> Last updated: 
+      <?php
+    // Auto refresh every 30 min to ensure we have latest data from the source web page which is polled every 10-120secs
+      $url=$_SERVER['REQUEST_URI'];
+      header("Refresh: 30; URL=$url");
+      echo date("Y-m-d h:i:sa", strtotime('now'))
+    ?>
+    </div>
     <div >
       <h2 id="title"> Critical Products</h2>
       <table id="product-table">
@@ -47,23 +54,26 @@
           <tr>
             <th>Product</th>
             <th>Quantity Available</th>
+             
           </tr>
         </thead>
   
         <tbody>
       
           @foreach( $products as $product)
-          <tr>  
+          <tr> 
             <td>{{$product->name}}</td>
             <td>{{$product->available_qty}}</td> 
-          </tr>
- 
+           
           @endforeach
          </tbody>
        </table>
     </div>
   </body>
 
+<footer>
+ 
+</footer>
 </html>
 
  

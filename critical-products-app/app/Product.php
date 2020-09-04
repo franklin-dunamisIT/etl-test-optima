@@ -16,5 +16,5 @@ class Product extends Model
     protected $collection = 'products';
 
 
-    protected $fillable = ['name', 'available_qty'];
+    protected $fillable = ['name', 'available_qty', 'last_updated'];
 }

@@ -15,7 +15,7 @@ class CreateProductsCollection extends Migration
     {
         Schema::create('products', function (Blueprint $collection) {
             $collection->increments('id');
-            $collection->timestamps();
+            $collection->timestamps('last_updated');
             $collection->string('name');
             $collection->integer('available_qty')->unsigned();
         });

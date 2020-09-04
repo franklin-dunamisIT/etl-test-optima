@@ -74,8 +74,15 @@ products to db challenge_db
 ```
 
 #### Loading phase
-- Laravel was installed on the test machine and set up accordingly (e.g. a Model, Controller, View were created for the products; mongodb was replaced as the default db for the framework;). The workspace for that is `critical-projects-app`. THe require dependencies are found in composer.json/composer.lock. 
-- 
+Laravel was installed on the test machine and set up accordingly (e.g. a Model, Controller, View were created for the products; mongodb was replaced as the default db for the framework;). The workspace for that is `critical-projects-app`. THe require dependencies are found in composer.json/composer.lock. 
+
+Some key files include:
+- critical-products-app\app\Product.php - the product model
+- critical-products-app\resources\views\productIndex.blade.php - the product view
+- critical-products-app\app\Http\Controllers\ProductController.php -  the product controller
+- critical-products-app\database\migrations\2020_09_03_065904_create_products_collection.php - db migration for products collection
+- critical-products-app\routes\web.php -  the route which link the model function with url route
+
 
 <img src="https://github.com/franklin-dunamisIT/etl-test-optima/blob/master/images/critical%20products%20img.JPG"/>
 

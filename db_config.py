@@ -1,8 +1,8 @@
+import os
 
-
-DB_HOST='localhost'
-DB_PORT=27017
-DB_NAME='challenge_db'
-DB_USER='optima'
-DB_PASSWORD='secret'
-COLLECTION='products'
+DB_HOST=os.environ['DB_HOST']
+DB_PORT=os.environ['DB_PORT']
+DB_NAME=os.environ['DB_NAME']
+COLLECTION=os.environ['COLLECTION']
+DB_USER=os.environ['DB_USER']
+DB_PASSWORD=os.environ['DB_PASSWORD']
