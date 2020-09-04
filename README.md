@@ -84,6 +84,6 @@ Some key files include:
 - critical-products-app\routes\web.php -  the route which link the model function with url route
 
 
-<img src="https://github.com/franklin-dunamisIT/etl-test-optima/blob/master/images/critical%20products%20img.JPG"/>
+<img src="https://github.com/franklin-dunamisIT/etl-test-optima/blob/master/images/critical%20products%20img%20-%20latest.JPG"/>
 
 
